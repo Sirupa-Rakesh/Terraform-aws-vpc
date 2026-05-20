@@ -28,4 +28,4 @@ resource "aws_subnet" "public" {
     },
     var.public_subnet_tags,
   )
-}
+}   
