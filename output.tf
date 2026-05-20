@@ -1,4 +1,4 @@
-output "azs_info" {
+output "az_info" {
     value = data.aws_availability_zones.available
 }
 
