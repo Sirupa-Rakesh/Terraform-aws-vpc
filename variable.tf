@@ -27,3 +27,8 @@ variable "igw_tags" {
     
   
 }
+
+variable "public_subnet_cidr" {
+    type = list()
+    default = ["10.0.0.0/24", "10.0.2.0/24"]
+}
