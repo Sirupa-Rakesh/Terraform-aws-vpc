@@ -13,7 +13,7 @@ locals {
     },
     var.vpc_tags
   )
-  
+
   igw_final_tags = merge(
     local.common_tags,
     {
@@ -21,5 +21,11 @@ locals {
     },
     var.igw_tags
   )
+  az_name = slice(data.aws_availability_zones.available.group_names, 0,2)
+  
+  
 }
 // ...existing code...
+
+
+
