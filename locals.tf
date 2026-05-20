@@ -10,5 +10,6 @@ locals {
     {
         Name = "${var.project}-${var.environment}"
     },
+    var.vpc_tags
   )
 }
